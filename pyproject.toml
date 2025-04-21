@@ -1,0 +1,30 @@
+[project]
+name = "research-agent-langgraph"
+version = "0.1.0"
+description = "Research Agent with LangGraph and Chainlit"
+readme = "PROJECT_README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "langchain==0.3.15",
+    "langchain-community==0.3.15",
+    "langchain-openai==0.3.2",
+    "langgraph==0.2.67",
+    "chainlit==2.5.5",
+    "pandas>=2.0.0",
+    "arxiv>=1.4",
+    "tavily-python",
+    "pydantic>=2.0.0",
+    "typing-extensions>=4.5.0",
+    "websockets>=11.0.0",
+
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.uv]
+pip = { only-binary = ["numpy"] }
