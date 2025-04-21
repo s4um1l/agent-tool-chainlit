@@ -17,14 +17,7 @@ DEBUG_MODE = True  # Set to True to show detailed tool usage
 AVAILABLE_DOMAINS = [
     "General Research",
     "Computer Science",
-    "Medicine",
-    "Finance",
-    "Climate Science",
     "Artificial Intelligence",
-    "History",
-    "Psychology",
-    "Physics",
-    "Biology"
 ]
 
 @cl.on_chat_start
